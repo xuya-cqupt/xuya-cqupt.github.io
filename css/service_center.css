@@ -1,0 +1,370 @@
+/* @group general styles 一般性样式（主体样式 reset样式 链接 标题 其他元素）
+------------------------------------------------------------------------------------------------------------*/
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "Microsoft YaHei";
+    font-size: 1em;
+}
+body {
+    min-width: 1280px;
+    background: #fff;
+}
+a {
+    text-decoration: none;
+}
+/* @group helper styles 辅助样式（表单 通知和错误 一致的条目）
+------------------------------------------------------------------------------------------------------------*/
+
+/* @group page structure 页面结构（标题、页脚和导航 布局 其他页面结构元素）
+------------------------------------------------------------------------------------------------------------*/
+#wrapper {
+    width: 100%;
+}
+#banner {
+    width: 100%;
+    min-height: 116px;
+}
+#banner a img {
+    width: 100%;
+    border: none;
+}
+#header {
+    width: 90%;
+    height: 115px;
+}
+#header #logo { /*@Logo*/
+    float: left;
+    margin-top: 40px;
+}
+#search_box {   /*@搜索框*/
+    float: left;
+    margin-left: 6%;
+    margin-top: 50px;
+    width: 40%;
+    height: 60px;
+}
+#search {   
+    width: 100%;
+    height: 35px;
+    border: 2px solid #f23569;
+}
+#search_name {
+    float: left;
+    margin-top: 2px;
+    margin-left: 1%;
+    width: 80%;
+    height: 31px;
+    line-height: 31px;
+    border: none;
+    outline: none;
+}
+#search_btn {
+    float: right;
+    width: 18%;
+    height: 35px;
+    text-align: center;
+    background-color: #f23569;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+#header #loginbar { /*@登陆注册*/
+    float: right;
+    margin-top: 80px;
+    width: 10%;
+    height: 30px;
+    line-height: 30px;
+    color: #585c6c;
+}
+#loginbar a {
+    padding: 0 10px;
+    color: #9a999b;
+}
+#loginbar a:hover {
+    text-decoration: underline;
+}
+#loginbar a span {
+    color: #f16185;
+}
+#nav {
+    width: 100%;
+    height: 40px;
+    background-color: #2e2e2e;
+}
+#nav ul {   /*主导航条*/
+    float: left;
+    margin-left: 5%;
+    width: 53%;
+    height: 40px;
+    padding: 0;
+}
+#nav ul li {
+    float: left;
+    width: 16%;
+    height: 40px;
+    border-right: 1px solid #8a8a8a;
+}
+#nav ul li a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+}
+#nav ul li a:hover {
+    color: #f16185;
+}
+#nav ul li a:hover {
+    background-color: #00abdf;
+    transition: background-color 1s;
+    -moz-transition: background-color 1s; /* Firefox 4 */
+    -webkit-transition: background-color 1s; /* Safari 和 Chrome */
+}
+#service_banner {
+	width: 100%;
+	height: 238px;
+}
+#service_banner img {
+	width: 100%;
+}
+#content {
+    margin-top: 25px;
+    width: 98%;
+    min-height: 673px;
+    border-bottom: 2px solid #dcdada;
+}
+.left_bar {		/*@左边栏*/
+	width: 18%;
+	float: left;
+}
+#service_online {	/*	@客服在线*/
+	width: 100%;
+	height: 360px;
+	color: #fff;
+}
+#online_nav {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 1.2em;
+	background-color: #ef2156;
+	border-radius: 25px 0 0 0;
+}
+#service_list {
+	width: 100%;
+	height: 360px;
+	border-radius: 0 0 25px 0;
+	background-color: #2e2e2e;
+}
+#service_list ul {
+	padding-top: 30px;
+	width: 63%;
+}
+#service_list ul li {
+	width: 100%;
+	height: 41px;
+	border-bottom: 1px solid #636262;
+	line-height: 41px;
+	text-align: center;
+	list-style: url(../img/list_style.png);
+}
+#service_list ul li a {
+	color: #fff;
+}
+.left_bar img {
+	width: 100%;
+	margin-top: 15px;
+}
+.center_bar {	/*@中间栏 常见问题*/
+	float: left;
+	margin-left: 5%;
+	width: 52%;
+}
+#question_nav {
+	float: left;
+	width: 27%;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 1em;
+	background-color: #dcdada;
+	color: #6d6c6c;
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+}
+#question_nav img {
+	float: right;
+	margin-top: 13px;
+	margin-right: 5%;
+}
+#question_list {
+	margin-top: 52px;
+	width: 100%;
+	border-top: 9px solid #dcdada;
+	clear: left;
+}
+#question_list li {
+	width: 100%;
+	font-size: 0.9em;
+	border-bottom: 1px solid #f1f1f1;
+}
+.question {
+	margin-top: 12px;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+}
+.question img {
+	margin-right: 10px;
+	float: left;
+}
+.answer {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	width: 100%;
+	background-color: #eeecec;
+	border-radius: 5px;
+	border: 1px solid #d5d5d5;
+}
+.answer p {
+	padding: 10px 0 10px 0;
+	display: block;
+	width: 90%;
+}
+.answer p span {
+	color: #ef2156;
+}
+#page_list {
+    margin-top: 65px;
+    width: 88%;
+    height: 25px;
+}
+#page_list li {
+    float: left;
+    margin-left: 5px;
+}
+#page_list li a {
+    float: left;
+    padding: 0 7px;
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    background-color: #ececec;
+    color: #828080;
+    text-align: center;
+    font-size: 0.8em;
+}
+#page_list li.last_block {
+    float: right;
+    height: 23px;
+    line-height: 23px;
+    color: #828080;
+    text-align: center;
+    font-size: 0.8em;
+}
+#page_input {
+    width: 25px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #d1d1d1;
+}
+.right_bar {	/*@右边栏 服务记录 自助服务*/
+	float: right;
+	width: 23%;
+}
+#service_trace {
+	width: 100%;
+	height: 250px;
+	border: 1px solid #dcdada;
+}
+#self_help {
+	margin-top: 35px;
+	width: 100%;
+	height: 315px;
+	border: 1px solid #dcdada;
+}
+.right_bar_nav {
+	width: 80%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.2em;
+	border-bottom: 1px solid #dcdada;
+}
+#feedback {	/*@反馈*/
+	margin-top: 20px;
+	margin-bottom: 30px;
+	width: 98%;
+	height: 357px;
+}
+.feedback_nav {
+	float: left;
+	width: 14%;
+	height: 47px;
+}
+.feedback_nav img {
+	float: left;
+	width: 100%;
+	height: 100%;
+	margin-left: -6%;
+}
+.feedback_nav p {
+	margin-top: -28px;
+	margin-left: 10%;
+	float: left;
+	color: #fff;
+}
+#feedback_content {
+	width: 100%;
+	height: 354px;
+	background-color: #eeecec;
+	border-radius: 5px;
+}
+#feedback_content form textarea {
+	float: left;
+	padding: 5px;
+	margin-left: 3%;
+	width: 94%;
+	height: 250px;
+	background-color: #fff;
+	outline: none;
+	resize: none;
+}
+#feedback_content form input {
+	width: 80px;
+	height: 30px;
+	float: right;
+	margin-right: 3%;
+	margin-top: 10px;
+	background-color: #53bbf0;
+	color: #fff;
+	border: none;
+}
+#feedback_content form input:hover {
+	cursor: pointer;
+}
+#footer {
+    width: 100%;
+    height: 60px;
+    background-color: #272424;
+    color: #abaaaa;
+    font-weight: bold;
+}
+#footer p {
+    position: relative;
+    top: 20px;
+    display: block;
+    width: 95%;
+}
+#footer span {
+    float: left;
+}
+#footer span.address {
+    float: right;
+}
+/* @group page components 页面组件（各个页面）
+------------------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,458 @@
+/* @group general styles 一般性样式（主体样式 reset样式 链接 标题 其他元素）
+------------------------------------------------------------------------------------------------------------*/
+* {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	font-family: "Microsoft YaHei";
+	font-size: 1em;
+}
+body {
+	min-width: 1280px;
+	height:100%;
+}
+a {
+	text-decoration: none;
+}
+/* @group helper styles 辅助样式（表单 通知和错误 一致的条目）
+------------------------------------------------------------------------------------------------------------*/
+
+/* @group page structure 页面结构（标题、页脚和导航 布局 其他页面结构元素）
+------------------------------------------------------------------------------------------------------------*/
+#wrapper {
+	width: 100%;
+	height: auto;
+	
+
+}
+#header {
+	width: 90%;
+	height: 115px;
+}
+#nav {
+	width: 100%;
+	height: 40px;
+	background-color: #2e2e2e;
+}
+.goods_bg,.goods_bg img{
+	width:100%;
+	cursor:pointer;
+}
+#content {
+	width: 80%;
+	height: auto;
+	margin-top:30px;
+
+}
+#goods_upload{/*@表单填充*/
+		width:100%;
+		height:600px;		
+	}
+.left_sidebar,.right_sidebar {	/*@左右分栏*/
+	height: 100%;
+}
+.left_sidebar {
+	position: relative;
+	width: 390px;
+	float: left;
+}
+.right_sidebar {
+	position: relative;
+	width: 58%;
+	float: right;
+	z-index: 0;
+	background: #fff;
+}
+/*#footer {
+	width: 90%;
+	height: 60px;
+	background-color: #272424;
+	color: #abaaaa;
+	font-weight: bold;
+}
+#footer p {
+	position: relative;
+	top: 20px;
+	display: block;
+	width: 95%;
+}
+#footer span {
+	float: left;
+}
+#footer span.address {
+	float: right;
+}*/
+#header #logo {	/*@Logo*/
+	float: left;
+	margin-top: 40px;
+}
+#header #loginbar {	/*@登陆注册*/
+	float: right;
+	margin-top: 80px;
+	width: 15%;
+	height: 30px;
+	line-height: 30px;
+	color: #585c6c;
+}
+#loginbar a {
+	padding: 0 10px;
+	color: #9a999b;
+}
+#loginbar a:hover {
+	text-decoration: underline;
+}
+#loginbar a span {
+	color: #f16185;
+}
+#nav ul {	/*主导航条*/
+	float: left;
+	margin-left: 5%;
+	width: 53%;
+	height: 40px;
+	padding: 0;
+}
+#nav ul li {
+	float: left;
+	width: 16%;
+	height: 40px;
+	border-right: 1px solid #8a8a8a;
+}
+#nav ul li a {
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+}
+#nav ul li a:hover {
+	color: #f16185;
+}
+#nav ul li a:hover {
+	background-color: #00abdf;
+	transition: background-color 1s;
+	-moz-transition: background-color 1s; /* Firefox 4 */
+	-webkit-transition: background-color 1s; /* Safari 和 Chrome */
+}
+/*@fixed*/
+.fixed_right,.fixed_right_2,.fixed_left{
+	z-index: 999;
+	cursor: pointer;
+	bottom:4%;
+	left:0px;
+}
+.fixed_right{
+	position: fixed;
+	width:155px;
+	height:220px;
+	background: url("../img/fixed_bg_1.jpg");
+}
+.fixed_right_2{
+	position: fixed;
+   width:178px;
+   height:220px;
+   background:url(../img/icon_bg_2.jpg) center center;
+
+}
+.icon_close{
+	display: block;
+	width:18px;
+	height:18px;
+	border:1px solid;
+	position:absolute;
+	top:0px;
+	right:0px;
+	text-align: center;
+}
+.icon_close:hover{
+	background-color: #ccc;
+}
+/*@start*/
+.left_sidebar{
+	overflow: hidden;
+}
+.left_sidebar p{
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+#big_show{
+	width:100%;
+	margin-top:40px;
+}
+#big_pic{
+	display: block;
+	width:330px;
+	height:350px;
+	margin:auto;
+}
+#small_show{
+	position: relative;
+	width:390px;
+	margin:40px auto;
+}
+#small_ul{
+	height:85px;
+	position: absolute;
+	left:0px;
+}
+#small_ul li{
+	width:78px;
+	height:85px;
+	/*border:1px solid;*/
+	float: left;
+}
+#small_ul li img{
+	display: block;
+	width:68px;
+	height:85px;
+	margin-right:10px;
+	
+}
+.img_click_before{
+  border:1px solid transparent;
+  opacity:0.5;
+  filter:alpha(opacity=50);
+}
+.img_click_after{
+	border:1px solid red;
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+#up_btn{
+	float:right;
+
+}
+#up_btn,input[name='submit'],#submit2{
+	width:90px;
+	height:30px;
+	display: block;
+	cursor: pointer;
+	background:#FF83FA; 
+	border-style: none;
+	border-radius: 4px;
+	color: #fff;
+
+}
+#up_btn:hover,input[name='submit']:hover,#submit2:hover{
+background-color:#F10150 ;
+}
+.icon_top,.icon_top img{
+	width:100%;
+	height:150px;
+	cursor: pointer;
+
+}
+hr{
+	color:#ccc;
+	border-style: dashed;
+}
+select[name='goods_style']{
+	width:150px;
+	text-align: center;
+}
+form[name='form1'] p{
+	margin-top:25px;
+	font-size: 13px;
+
+}
+form[name='form2']{
+	margin-top:60px;
+}
+form[name='form2'] p{
+	margin:10px 15px;
+	font-size: 13px;
+}
+ i+span{
+  color:#c03;
+  letter-spacing: 5px;
+}
+.remind{
+	color:#FC3973;
+	font-size: 12px;
+	text-indent: 30px;
+}
+i{
+	color:red;
+	font-size:12px;
+	padding:20px; 
+}
+input[name='submit']{
+	margin:auto;
+}
+input[name='date'],input[name='goods_name']{
+	border:0px;
+	border-bottom: 1px solid transparent;
+	text-align: center;
+}
+textarea{
+	padding:10px;
+	font-size: 14px;
+	display: block;
+	margin:10px auto;
+	width:380px;
+	height:110px;
+	border-radius:6px;
+       border:1px solid #909090;
+       -webkit-transition: box-shadow 0.30s ease-in-out;   
+       -moz-transition:  box-shadow 0.30s ease-in-out; 
+}
+textarea:focus{
+	outline:none;
+	border:#87C6F9 1px solid;
+     box-shadow: 0 0 8px rgba(103, 166, 217, 1);
+}
+.file {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+}
+#history,#favorite{
+	width:100%;
+	height:22%;
+	margin-top:20px;
+	background: #fff;
+
+}
+.center img{
+	width:100%;
+	height:auto;
+	margin-top:15px;
+}
+#history{/*@历史信息*/
+
+}
+#favorite{/*@猜你喜欢*/
+
+}
+.logo_bg{
+	width:100%;
+	height:50px;
+	background: url(../img/nav_background.png) left -10px no-repeat;
+	line-height: 30px;
+	padding-left:8%;
+	padding-top:5px;
+	font-size: 16px;
+	color:#eee;
+	font-weight:600;
+}
+.goods_infor_ul{
+	width:100%;
+	height:200px;
+}
+.goods_infor_ul li{
+	background:url(../img/loading.jpg) no-repeat center center;
+width:18%;
+float:left;
+display: block;
+position: relative;
+height:100%;
+border:1px solid transparent;
+margin-left:15px;
+cursor: pointer;;
+}
+.goods_infor_ul  img{
+ display: block;
+ width:100%;
+ height:100%;
+
+}
+.goods_infor_ul p{
+position: absolute;
+bottom: 0;
+width:100%;
+height:13%;
+line-height: 30px;
+font-size: 13px;
+z-index:3;
+background-color:#f5f5dc;
+text-align: center;
+word-break: break-all;
+opacity:0.9;                  
+filter:alpha(opacity=80);
+transition: background-color 0.5s;
+-moz-transition: background-color 0.5s; /* Firefox 4 */
+-webkit-transition: background-color 0.5s ; /* Safari 和 Chrome */
+}
+.goods_infor_ul li:hover{
+	border:1px solid #DF2252;
+}
+.goods_infor_ul li:hover p {
+	background-color:rgba(226,35,83,0.7);
+	}
+.footer_img{
+	display: block;
+	width:100%;
+	margin-top:15px;
+	height:auto;
+	cursor: pointer;
+}
+/*@footer*/
+
+.footer,.footer_div1,.footer_div2{
+	width:100%;
+}
+.footer_div1{
+	height:100px;
+	background-color:#F5F5F5 ;
+}
+.footer_div1 span{
+	display:block;
+	width:25%;
+	float:left;
+	height:auto;
+	text-align: center;
+	padding-top:20px;
+
+}
+.footer_div2{
+    padding-top:50px;
+	height:240px;
+	background-color:#3F4143 ;
+	
+}
+.footer_left{
+	width:20%;
+	float:left;
+	color:white;
+	text-align: center;
+}
+.footer_left img{
+ display: block;
+ margin-top:10px;
+}
+.footer_right{
+	float: left;
+	width:80%;
+	color:#AFAFB1;
+}
+.footer_right thead tr{
+	font: 17px normal;
+	
+}
+.footer_right td{
+	border-left:1px dashed #666;
+	text-indent: 60px;
+}
+.footer_right tbody p{
+	font-size: 12px;
+    line-height: 25px;
+}

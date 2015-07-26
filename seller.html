@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>逆拍</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+<div class="fixed_right_2"><span class="icon_close">X</span></div>
+  <div id="wrapper">
+	<div id="header">
+			<img id="logo" src="./img/logo.png">
+			<div id="loginbar">
+				<a href="login.html"><span>登陆</span></a>|<a href="register.html">注册</a>
+			</div>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="square.html">用户中心</a></li>
+				<li><a href="#">客服反馈</a></li>
+				<li><a href="#">安全保护</a></li>
+				<li><a href="service_center.html">会员社区</a></li>
+				<li class="last_li"><a href="#">寻宝史</a></li>
+			</ul>
+		</div>
+		<div class="goods_bg">
+			<a href="javascript:;"><img src="img/goods.jpg"></a>
+	    </div>
+		<div id="content">
+			<div id="goods_upload">
+				<div class="left_sidebar" >
+					<div>
+						<p>选择所要上传图片（不超过5张）:</p>
+						<a href="javascript:;" class="file"><input type="file" id="file" multiple accept="image/*" value="选择图片" style="width:240px;">选择图片</a>
+						<input type="button" id="up_btn"  value="确认上传">
+					</div>
+					<div id="show">
+						<div id="big_show"> 							<img src="img/bg2.jpg" id="big_pic">
+						</div>
+						<div id="small_show">
+							<ul id="small_ul">
+								<li><img src="img/bg2.jpg" class="img_border"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="right_sidebar">
+					<div class="icon_top"><img src="img/icon_bg_1.jpg"></div>
+					<form name="form2">
+						<p><label>商品的类型：<i></i><span id="style"></span></label></p>
+						<hr>
+						<p><label>名称：<i></i><span id="description"></span></label></p>
+						<hr>
+						<div>
+							<p>详细说明：</p>
+						   <textarea id="explain"></textarea>
+						   </div>
+						<p style="margin-top:30px;">
+						   <span>附件：</span><input type="file" id="extra" value="" style="width:240px;">（.rar或.zip文件）<i></i>
+						</p>
+						<p style="margin-top:30px;"><input type="button" value="提交" id="submit2"></p>
+					</form>
+				</div>
+			</div>
+			<!--历史信息-->
+			<div id="history" >
+				<div class="logo_bg">历史信息</div>
+				<ul class="goods_infor_ul">
+					<li><img src=""><p></p></li>
+					<li><img src=""><p></p></li>
+					<li><img src=""><p></p></li>
+					<li><img src=""><p></p></li>
+					<li><img src=""><p></p></li>
+				</ul>
+			</div>
+			<!--猜你喜欢-->
+			<div id="favorite">
+				<div class="logo_bg">猜你喜欢</div>
+				<ul class="goods_infor_ul">
+					<li><img src=""><p></p></li>
+					<li><img src=""><p></p></li>
+					<li><img src=""><p></p></li>
+					<li><img src=""><p></p></li>
+					<li><img src=""><p></p></li>
+				</ul>
+			</div>
+			<img src="img/bg3.jpg" class="footer_img">
+		</div>
+		<footer class="footer">
+			<div class="footer_div1">
+				<span><img src="img/footer_items_1.png" alt=""></span>
+				<span><img src="img/footer_items_2.png" alt=""></span>
+				<span><img src="img/footer_items_3.png" alt=""></span>
+				<span><img src="img/footer_items_4.png" alt=""></span>
+			</div>
+			<div class="footer_div2">
+				<div class="footer_left">
+				  <img src="img/footer_bg_left_2.jpg">
+                  <img src="img/footer_bg_left.jpg">
+				</div>
+				<table class="footer_right">
+					<thead><tr>
+						<td>质量保障</td>
+						<td>购物指南</td>
+						<td>支付方式</td>
+						<td>商家服务</td>
+						<td>专属客服</td>
+					</tr>
+				</thead>
+				<tbody>
+				    <tr>
+				    	<td><p>正品保证</p><p>厂家直供</p></td>
+				    	<td><p>购物流程<p><p>购物须知</p><p>售后规则</p></td>
+				    	<td><p>支付宝</p><p>财付通</p><p>微信支付</p><p>网银</p></td>
+				    	<td><p>平台规则</p><p>入驻资质</p><p>联系我们</p></td>
+				    	<td><p>客服 400-606-9933</p><p>服务时间 9:00-22:00</p><p>在线客服</p></td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+		</footer>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/commonFun.js"></script>
+	<script type="text/javascript">
+$(function(){
+	common.init2();
+});
+	</script>
+
+
+</body>
+</html>
